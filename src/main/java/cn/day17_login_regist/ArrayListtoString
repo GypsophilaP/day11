@@ -1,0 +1,15 @@
+代码：
+    Collection c = new ArrayList();
+    c.add("hello");
+    c.add("world");
+    c.add("java");
+    System.out.println(c);
+
+为什么c输出的不是地址值呢？
+    A:Collection c = new ArrayList();
+        这是多态，所以输出c的toString方法其实是输出ArrayList的toString
+    B:看ArrayList的toString
+        而我们在ArrayList里面却没有发现toString
+        以后遇到这种情况 也不要担心 你认为有 他却没有 就要去他父亲里看看
+    C:toString方法的源码就出现了
+

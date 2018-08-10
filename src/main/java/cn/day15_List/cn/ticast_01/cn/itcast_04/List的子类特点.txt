@@ -1,0 +1,20 @@
+List:(面试题List的子类特点)
+    ArrayList:
+        底层数据结构是数组，查询快，增删慢
+        线程不安全，效率高
+
+    Vector：
+        底层数据结构是数组，查询快，增删慢
+        线程安全，效率低（）查询比arrayList慢
+
+    LinkedList：
+        底层数据结构是链表，查询慢，增删快
+        线程不安全，效率高
+
+    List有三个子类，到底是用谁 看需求
+
+    要安全吗？
+        要Vector(即使用安全，也不用这个)
+        不要：ArrayList或者LinkedList
+            查询多ArrayList
+            增删多：LinkedList
